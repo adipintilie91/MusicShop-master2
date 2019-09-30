@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.25, 12.75" name="MusicPlayModels">
+  <DataContextMoniker Name="/MusicPlayModelsDataContext" />
+  <nestedChildShapes>
+    <classShape Id="55debbde-dd38-4a46-879f-c4c85c85c130" absoluteBounds="1.5, 11.25, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/MusicPlayModelsDataContext/Category" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4e67b878-8ee0-46cb-8495-ef1fbe4dfa46" absoluteBounds="1.5150000000000001, 11.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c5ffc6b9-94b1-4a0d-a57e-22e262a279f6" absoluteBounds="0.75, 8.25, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/MusicPlayModelsDataContext/Product" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f50fc93b-5e21-474c-bf4c-180e1f15d19f" absoluteBounds="0.765, 8.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="07c99d82-dde9-41b5-afbf-cc76d4c71d28" absoluteBounds="0.75, 5.375, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/MusicPlayModelsDataContext/Country" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6e4afa29-9807-46c0-aba5-aa954b19b9fa" absoluteBounds="0.765, 5.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2b4f0c92-f8d5-4e68-ad9a-636f03ac1d0e" absoluteBounds="3.5, 4.875, 2, 2.3478011067708326">
+      <DataClassMoniker Name="/MusicPlayModelsDataContext/Customer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4b3fffb6-1f97-41e0-acbd-9d86cecea06a" absoluteBounds="3.515, 5.335, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dbfdb09b-de7e-467c-a3c8-7a5bd91d348c" absoluteBounds="9, 5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/MusicPlayModelsDataContext/OrderDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="14fb2f3e-e913-48de-8676-428aa7583972" absoluteBounds="9.015, 5.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bf88efaa-f3a1-4610-b9d8-c3a2519b27f2" absoluteBounds="6.25, 5.125, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/MusicPlayModelsDataContext/Order" />
+      <nestedChildShapes>
+        <elementListCompartment Id="181d2026-f9ee-4328-8da2-33ac1a314e42" absoluteBounds="6.265, 5.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1e5e9261-d71f-450c-90d9-cafa93313005" absoluteBounds="3.5, 0.75, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/MusicPlayModelsDataContext/ProductDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2c0290d6-de5b-4d25-ab21-3b39016565ee" absoluteBounds="3.515, 1.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.125 : 11.25); (2.125 : 9.6362939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MusicPlayModelsDataContext/Category/Category_Product" />
+      <nodes>
+        <classShapeMoniker Id="55debbde-dd38-4a46-879f-c4c85c85c130" />
+        <classShapeMoniker Id="c5ffc6b9-94b1-4a0d-a57e-22e262a279f6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 5.97199625651042); (3.04166666666667 : 5.97199625651042 : JumpStart); (3.20833333333333 : 5.97199625651042 : JumpEnd); (3.5 : 5.97199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MusicPlayModelsDataContext/Country/Country_Customer" />
+      <nodes>
+        <classShapeMoniker Id="07c99d82-dde9-41b5-afbf-cc76d4c71d28" />
+        <classShapeMoniker Id="2b4f0c92-f8d5-4e68-ad9a-636f03ac1d0e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 6.01044840494792); (9 : 6.01044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MusicPlayModelsDataContext/Order/Order_OrderDetail" />
+      <nodes>
+        <classShapeMoniker Id="bf88efaa-f3a1-4610-b9d8-c3a2519b27f2" />
+        <classShapeMoniker Id="dbfdb09b-de7e-467c-a3c8-7a5bd91d348c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 6.01044840494792); (6.25 : 6.01044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MusicPlayModelsDataContext/Customer/Customer_Order" />
+      <nodes>
+        <classShapeMoniker Id="2b4f0c92-f8d5-4e68-ad9a-636f03ac1d0e" />
+        <classShapeMoniker Id="bf88efaa-f3a1-4610-b9d8-c3a2519b27f2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 2.02005126953125); (10 : 2.02005126953125); (10 : 5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MusicPlayModelsDataContext/ProductDetail/ProductDetail_OrderDetail" />
+      <nodes>
+        <classShapeMoniker Id="1e5e9261-d71f-450c-90d9-cafa93313005" />
+        <classShapeMoniker Id="dbfdb09b-de7e-467c-a3c8-7a5bd91d348c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 5.375); (1.75 : 2.02005126953125); (3.5 : 2.02005126953125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MusicPlayModelsDataContext/Country/Country_ProductDetail" />
+      <nodes>
+        <classShapeMoniker Id="07c99d82-dde9-41b5-afbf-cc76d4c71d28" />
+        <classShapeMoniker Id="1e5e9261-d71f-450c-90d9-cafa93313005" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 8.25); (3.125 : 7.875); (3.125 : 2.68632890429688); (3.5 : 2.68632890429688)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MusicPlayModelsDataContext/Product/Product_ProductDetail" />
+      <nodes>
+        <classShapeMoniker Id="c5ffc6b9-94b1-4a0d-a57e-22e262a279f6" />
+        <classShapeMoniker Id="1e5e9261-d71f-450c-90d9-cafa93313005" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

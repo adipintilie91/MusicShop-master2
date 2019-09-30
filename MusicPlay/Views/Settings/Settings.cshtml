@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Settings";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    ViewBag.Title = "Settings Page";
+}
+<h2>Settings</h2>
+
+<div class="row">
+    <div class="col-md-4">
+        <div>
+            Category
+            @Html.ActionLink("Create", "Create", "Category")
+            @Html.ActionLink("View", "View", "Category")
+        </div>
+
+        <div>
+            Product
+            @Html.ActionLink("Create", "Create", "Product")
+            @Html.ActionLink("View", "View", "Product")
+        </div>
+
+        <div>
+            ProductDetails
+            @Html.ActionLink("Create", "Create", "ProductDetail")
+            @Html.ActionLink("View", "View", "ProductDetail")
+        </div>
+    </div>
+</div>
